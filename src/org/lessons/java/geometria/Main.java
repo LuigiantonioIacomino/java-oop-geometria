@@ -15,11 +15,29 @@ public class Main {
         System.out.println(areaCalcolata);
         System.out.println(perimetroCalcolato);
         for (int i = 0; i < Base; i++) {
+            if(i==Base-1) {
+                System.out.println("0");
+            }
+            else {
+                System.out.print("0");
+            }
+        }
+        for (int j = 0; j <Altezza; j++) {
+            for (int i = 0; i < Base; i++) {
+                if (i == 0) {
+                    System.out.print("0");
+                } else if (i == Base - 1) {
+                    System.out.println("0");
+                } else {
+                    System.out.print(" ");
+                }
+            }
+        }
+
+        for (int i = 0; i < Base; i++) {
             System.out.print("0");
         }
-        for (int i = 0; i < Altezza; i++) {
-            System.out.println();
-        }
+
 
     }
 }
